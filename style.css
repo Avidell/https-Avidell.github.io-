@@ -1,0 +1,165 @@
+:root{
+font-size: 26px;
+color: #34495E;
+}
+
+
+body{
+    margin: 18px;
+    padding: 6px;
+}
+
+h1{
+	font-size: 4vh;
+	line-height: 4.5vh; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+	font-size: 2.6vh;
+	line-height: 4.5vh; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+.project-info {
+font-size: 1.8vh;
+}
+
+hr{
+	margin-top: -20px;
+}
+
+.projects{
+	text-align: left;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    padding-top: 2vw;
+}
+
+.parent{
+    display: flex;
+    /* to tell that elements should wrap themselves to next line*/
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.item1, .item2, .item3, .item4 {
+    margin: 6px;
+	text-align: center;
+	font-family: Arial;
+
+/*	border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+*/
+}
+
+
+.item1{
+
+	text-align: right;
+
+}
+
+.item2{
+	text-align: left;
+
+}
+
+.item3 {
+text-align: left;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+body{
+    margin: 0px 236px 0 236px ;
+    padding: 6px;
+}
+.item1, .item2 {
+	width:50%;
+	flex:1;
+	flex-direction: row;
+ }
+
+ .item1 {
+
+	text-align: right;
+	padding-right: 2%;
+
+}
+
+ .item3, .item4 {
+	width:100%;
+	flex-direction: column;
+ }
+
+
+}
+
+
+@media screen and (min-width: 479px) and (max-width: 767px) {
+
+.item1, .item2 {
+	width:50%;
+	flex:1;
+	flex-direction: row;
+ }
+
+ .item1{
+	text-align: right;
+
+
+}
+
+ .item3, .item4{
+	width:100%;
+	flex-direction: column;
+ }
+
+ .responsive {
+    padding-right: unset;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+ .item1, .item2, .item3, .item4{
+ 	width: 100%;
+ 	flex-direction: column;
+ }
+
+.item1{
+
+	text-align: center;
+
+
+}
+
+.item2{
+text-align: center;
+	}
+
+	 h1{
+	font-size: 2.5vh;
+	line-height: 1vh; 
+}
+
+ h2{
+	font-size: 2vh;
+	line-height: 3.5vh; 
+}
+
+ .responsive {
+    padding-right: unset;
+}
+
+ 
+}
